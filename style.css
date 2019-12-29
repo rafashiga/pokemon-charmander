@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: #c0c0c0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pokemon {
+    margin-left: 400px;
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    background: #F27220;
+    box-shadow: inset -60px -100px 30px 5px #db5d26, inset 70px 10px 90px 5px rgb(253, 153, 86);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.pokemon__eye {
+    display: flex;
+}
+
+.pokemon__eye--left {
+    margin: 90px 110px 0 30px;
+}
+
+.pokemon__eye--right {
+    margin: 90px 5px 0 0;
+}
+
+.pokemon__eye--format {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background: #000;
+}
+
+.pokemon__eye--inner {
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #F27220;
+}
+
+.pokemon__eye--inner--left {
+    background: rgb(250, 145, 80);
+}
+
+.pokemon__mouth {
+    margin: 0 0 0 110px;
+    position: relative;
+    width: 70px;
+    height: 34px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background: #fff;
+}
+
+.pokemon__body {
+    margin-top: 30px;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+    background: #FFE393;
+    box-shadow: inset -190px -10px 70px 5px #f9c326;
+    transform: rotateZ(50deg);
+}
+
+/*
+    * tail
+*/
+.tail {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    left: 780px;
+    top: 180px;
+    border-radius: 70% 0% 70% 50%;
+    transform: rotateZ(-2deg);
+    z-index: -2;
+    background: #ffed78;
+    box-shadow: inset -20px -1px 20px 3px #ebcf1c;
+    animation: burn 2s linear infinite;
+}
+
+
+.tail__fire {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 40px;
+    top: 38px;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotateZ(-2deg);
+    background: rgb(255, 0, 0);
+    box-shadow: inset -1px -2px 6px 1px rgb(224, 0, 0);
+}
+
+
+.author {
+    margin-left: 440px;
+    font-weight: 800;
+    font-size: 20px;
+}
